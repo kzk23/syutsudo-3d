@@ -107,7 +107,7 @@ nav button:focus-visible,.ctl button:focus-visible,a:focus-visible{outline:2px s
 <script src="https://cdn.jsdelivr.net/npm/three@0.147.0/examples/js/environments/RoomEnvironment.js"></script>
 <script>
 const SHOP="https://syutsudo.base.shop/items/";
-const BLACK_LIVE=false;   // matte black の商品(写真待ちで非公開)を公開したら true に
+const BLACK_LIVE=true;   // matte black の商品(写真待ちで非公開)を公開したら true に
 // ローディング: 進み具合で陶印の層を1本ずつ掘り出す
 const LD=document.getElementById('load');requestAnimationFrame(()=>LD.classList.add('on'));
 function setProg(r,label){const sx=LD.querySelectorAll('.sx');sx.forEach((p,i)=>p.style.setProperty('--p',Math.min(100,Math.max(0,(r*5-i)*100))+'%'));
